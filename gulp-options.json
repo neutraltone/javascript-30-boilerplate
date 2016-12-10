@@ -1,0 +1,19 @@
+{
+  "src": {
+    "src": "src",
+    "scss": "src/scss/**/*.scss",
+    "img": "src/img/{,*/}*.{jpg,jpeg,png,gif,svg}",
+    "sprite": "src/sprite/{,*/}*.svg"
+  },
+  "dest": {
+    "dist": "dist",
+    "css": "dist/assets/css",
+    "img": "dist/assets/img"
+  },
+  "dep": {
+    "normalize": "node_modules/normalize-scss/sass"
+  },
+  "support": {
+    "browser": ["last 2 versions"]
+  }
+}
