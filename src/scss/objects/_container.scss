@@ -1,0 +1,10 @@
+/**
+ * Container
+ */
+
+// Page container object
+.container {
+  margin: 0 auto;
+  padding: 0 $base-gutter;
+  max-width: $base-container-width;
+}
