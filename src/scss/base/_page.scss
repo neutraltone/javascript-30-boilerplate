@@ -1,0 +1,36 @@
+/**
+ * Base page styles
+ */
+
+// Apply `border-box` to all elements
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Base page styles
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: color(text, medium);
+  font: 400 #{($base-font-size/16px)*1em}/#{$base-line-height/$base-font-size} $base-font;
+}
+
+html,
+body {
+  position: relative;
+}
+
+
+// Set base branded user interactions
+::selection {
+  background-color: color(brand, primary);
+  text-shadow: none;
+  color: #fff;
+}
+
+:focus {
+  outline: color(brand, primary) auto 5px;
+}

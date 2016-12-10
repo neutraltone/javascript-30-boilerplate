@@ -1,0 +1,9 @@
+/**
+ * Reset with normalize
+ */
+
+// Import Normalize from `node_modules`
+@import 'normalize';
+
+// Run normalize mixin
+@include normalize();
