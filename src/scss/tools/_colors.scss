@@ -1,0 +1,27 @@
+/**
+ * Color mixin - retreives the colors from the color $colors map in
+ * `settings/_colors.scss`.
+ *
+ * @param {Color name} $color-name - Defining color name.
+ * @param {Color varient} $color-variant - Varient of color.
+ *
+ * Usage:
+ *
+ * .foo {
+ *   color: color(brand, primary);
+ * }
+ *
+ * .foo {
+ *   color: color(brand);
+ * }
+ */
+
+@function color($color-name, $color-variant:null) {
+  @if ($color-variant != null) {
+    @return map-get(map-get($colors, $color-name), $color-variant);
+  }
+
+  @else {
+    @return map-get($colors, $color-name);
+  }
+}
